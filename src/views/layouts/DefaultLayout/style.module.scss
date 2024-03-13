@@ -1,4 +1,7 @@
-$assideWidth: 200px;
+
+$assideWidthContent:200px;
+$assideWidthPadding: 10px;
+$assideWidth: $assideWidthContent + $assideWidthPadding;
 
 .aside{ 
     overflow: auto; 
@@ -7,6 +10,7 @@ $assideWidth: 200px;
     top: 0; 
     bottom: 0;
     position: fixed !important;
+    padding: $assideWidthPadding !important;
     min-width: $assideWidth !important;
 }
 
