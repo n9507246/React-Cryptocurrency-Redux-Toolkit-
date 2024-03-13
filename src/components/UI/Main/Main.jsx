@@ -1,8 +1,9 @@
 import classes from './styles.module.scss'
 
-export function Layout({children, flex=1, className}){
+export function Layout({children, flex=1, size, className}){
+    const flexSize = size ? size : flex
     return(
-        <main className={ classes.main + ' ' + className} style={{flex: flex}}>
+        <main className={ classes.main + ' ' + className} style={{flex: flexSize}}>
             {children}
         </main>
     )
