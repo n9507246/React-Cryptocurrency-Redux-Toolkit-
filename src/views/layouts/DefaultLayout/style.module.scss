@@ -1,0 +1,28 @@
+$assideWidth: 200px;
+
+.aside{ 
+    overflow: auto; 
+    height: 100vh; 
+    left: 0; 
+    top: 0; 
+    bottom: 0;
+    position: fixed !important;
+    min-width: $assideWidth !important;
+}
+
+.main{
+    margin-left: $assideWidth !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content{
+    margin: 24px 16px 0;
+    overflow: initial;
+}
+
+.footer{
+    text-align: center 
+}

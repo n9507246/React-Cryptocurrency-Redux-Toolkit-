@@ -1,5 +1,3 @@
 import AsideBar from './AsideBar'
 
-export {
-    AsideBar
-}
+export default AsideBar
